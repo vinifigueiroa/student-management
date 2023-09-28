@@ -1,3 +1,8 @@
+/**  This program provides administrators with the ability to manage student records.
+*    It allows administrators to add new students, update student information,
+*    and view student details.
+*/
+
 import java.util.*;
 
 public class studentManagement {
