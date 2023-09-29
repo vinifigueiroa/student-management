@@ -192,13 +192,15 @@ public class studentManagement {
 
             if (integer < 0) {
                 System.err.println("ERROR: Please enter a positive amount.");
+                continue;
 
             } else if (integer == 0) {
                 return 0;
 
-            } else {
-                condition = false;
             }
+
+            condition = false;
+
 
         }
         System.out.println("\n");
@@ -227,14 +229,17 @@ public class studentManagement {
             }
 
             if (value < 0.0) {
+
                 System.err.println("ERROR: Please enter a positive amount.");
+                continue;
 
             } else if (value == 0.0) {
                 return 0.0;
 
-            } else {
-                condition = false;
             }
+
+            condition = false;
+
 
         }
 
@@ -299,39 +304,25 @@ public class Student {
 
     // Getter Methods
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
-    public double getGrade() {
-        return grade;
-    }
+    public double getGrade() {return grade;}
 
-    public int getID() {
-        return ID;
-    }
+    public int getID() {return ID;}
 
-    public int age() {
-        return age;
-    }
+    public int age() {return age;}
 
     public void summary() {
-        System.out.println("ID: " + ID +" || Name: "+ name + " || Age: " + age + " || Grade: " + grade);
-        System.out.println("\n");
+        System.out.println("ID: " + ID +" || Name: "+ name + " || Age: " + age + " || Grade: " + grade + "\n");
+
     }
 
 
     // Setter Methods
 
-    public void setAge(int newage) {
-        age = newage;
-    }
+    public void setAge(int newage) {age = newage;}
 
-    public void setGrade(double newgrade) {
-        grade = newgrade;
-    }
+    public void setGrade(double newgrade) {grade = newgrade;}
 
-    public void setName(String newname) {
-        name = newname;
-    }
+    public void setName(String newname) {name = newname;}
 }
